@@ -11,7 +11,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/ansari-exe/node-app-cicd-pipeline.git'
+                git branch: 'main', url: 'https://github.com/ansari-exe/node-app-cicd-pipeline.git'
             }
         }
 
